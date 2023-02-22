@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster');
+@import url('https://fonts.googleapis.com/css2?family=Nunito');
+
+/* ******** INDEX START ******** */
+/*Body*/
+
+body
+{
+    margin: 0px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/*Header*/
+.page-header { 
+    background-color: #2C462C;
+    padding: 10px;
+    border-bottom: #F4924B 2px dotted;
+}
+
+.page-head {
+    float: left;
+    margin: 0px;
+}  
+
+.logo {
+    width: 150px;
+    float: left;
+    padding-left: 45px;
+    padding-top: 5px;
+    margin-bottom: 5px;
+}
+
+.header-nav {
+    float: right;
+}
+
+.header-nav li {
+    display: inline-block;
+    margin-top: 0px;
+    font-size: xx-large;
+    padding-right: 40px;
+    padding-top: 10px;
+}
+
+.header-nav a {
+    text-decoration: none;
+    color: #F4924B;
+    font-family: lobster;
+}
+
+.header-nav li :hover
+{
+    text-decoration: underline;
+}
+
+.event {
+    display: inline-block;
+    list-style: none;
+    margin: 0px 80px;
+    font-size: x-large;
+    padding: 5px 5px 5px 5px;
+}
+
+.page-events {
+    background-color: #2C462C;
+}
+
+.page-events a
+{
+    text-decoration: none;
+    color: #F4924B;
+    font-family: lobster;
+    font-size: xx-large;
+}
+
+.page-events li :hover
+{
+    text-decoration: underline;
+}
+
+/*Main*/
+
+.welcome h1
+{
+    font-family: nunito;
+    text-align: center;
+    font-size: xx-large;
+}
+
+.intro-para
+{
+    font-size: medium;
+    font-family: nunito;
+    text-align: center;
+}
+
+/*Footer*/
+footer
+{
+    margin-top: auto;
+    background-color: #2C462C;
+}
+
+
+.footer-nav h3
+{
+    float: left;
+    font-size: large;
+    font-family: nunito;
+    color: #F4924B;
+    padding-left: 30px;
+}
+
+.footer-bottom li
+{
+    display: inline-block;
+    align-items: center;
+}
+
+.footer-bottom a
+{
+    color: #F4924B;
+    text-decoration: none;
+}
+
+#social{
+    float: right;
+    padding-right: 40px;
+}
+.social{
+    width: 30px;
+    padding-top: 17px;
+    padding-left: 30px;
+}
+
+/* ******** INDEX END ******** */
+
+/* ******** Events Start ******** */
+.events-header h1
+{
+    font-family: nunito;
+    text-align: center;
+    font-size: xx-large;
+}
+
+.both-events h2
+{
+    padding-left: 5cm;
+    font-family: nunito;
+    font-size: x-large;
+}
+
+.both-events a
+{
+    text-decoration: none;
+    padding-left: 6cm;
+    font-family: nunito;
+    color: black;
+}
+/* ******** Events END ******** */
+
+/* ******** New Event Start ******** */
+
+.new-header h1
+{
+    font-family: nunito;
+    text-align: center;
+    font-size: xx-large;
+}
+
+.form-name
+{
+    font-family: nunito;
+    padding-left: 5cm;
+}
+
+.form-reason
+{
+    font-family: nunito;
+    padding-left: 5cm;
+}s
+
+option
+{
+    text-align: center;
+}
+
+.start-end-time
+{
+    font-family: nunito;
+    padding-left: 5cm;
+}
+
+.form-category
+{
+    font-family: nunito;
+    padding-left: 5cm;
+}
+
+.form-pic
+{
+    font-family: nunito;
+    padding-left: 5cm; 
+}
+
+.button
+{
+    font-family: nunito;
+    padding-left: 5cm; 
+}
+
+/* ******** New Event END ******** */
+
+/* ******** Event start ******** */
+
+.event-header
+{
+    font-family: nunito;
+    padding-left: 5cm; 
+    padding-top: 3cm;
+}
+
+.tractor-red
+{
+    height: 10%;
+    width: 10%;
+    padding-left: 6cm;
+    float: left;
+    margin: 0cm;
+}
+
+.basic-info
+{
+    font-family: nunito;
+    float:left;
+    margin: 0%;
+    padding-left: 1cm;
+}
+
+.edit-pic img
+{
+    width: 2%;
+    margin-top: 5%;
+    padding-top: 4cm;
+    padding-right: .5cm;
+}
+
+/* ******** Event End ******** */
