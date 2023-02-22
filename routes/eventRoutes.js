@@ -1,40 +1,27 @@
 const express = require('express');
 const router = express.Router();
+const controller = require('../controllers/eventController')
 
 //GET /events: send all events to the user
-router.get('/', (req, res) => {
-    res.send('Send all events');
-});
+router.get('/', controller.index);
 
 //GET /events/new: send html form for creating a new event
-router.get('/new', (req, res) => {
-    res.send('Send the new form');
-});
+router.get('/new', controller.new);
 
 //POST /events: create a new event
-router.post('/', (req, res) => {
-    res.send('created a new event');
-});
+router.post('/', controller.create)
 
 //GET /events/:id: send details of evetn identified by id
-router.get('/:id', (req, res) => {
-    res.send('Send event with id ' + req.params.id);
-});
+router.get('/:id', controller.show);
 
 //GET /events/:id/edit: send html form for editing an existing event
-router.get('/:id/edit', (req, res) => {
-    res.send('Send edit form');
-});
+router.get('/:id/edit', controller.edit);
 
 //PUT /events/:id: update the story identified by id
-router.post('/:id', (req, res) => {
-    res.send('Update event with id ' + req.params.id);
-});
+router.post('/:id', controller.update);
 
 //DELETE /events/:id, delete the story identified by id
-router.delete('/:id', (req, res) => {
-    res.send('Delete event with id ' + req.params.id);
-});
+router.delete('/:id', controller.delete);
 
 
 module.exports = router;
