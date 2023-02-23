@@ -1,56 +1,66 @@
 <%- include('../partials/header.ejs')%>
-<main>
-    <form action = '/events' method = 'POST' class="new-form">
-        <div class="new-header">
-            <h1>New Event</h1>
-            <br>
-        </div>
+    <main>
+        <form action='/events' method='POST' class="new-form">
+            <div class="new-header">
+                <h1>New Event</h1>
+                <br>
+            </div>
 
-        <div class="form-name">
-            <label for="title">Event Name:</label><br>
-            <input type="text" id="title" name="title" required>
-        </div><br>
+            <div class="form-name">
+                <label for="title">Event Name:</label><br>
+                <input type="text" id="title" name="title" required>
+            </div><br>
 
-        <div class="form-reason">
-            <label for="author">Author:</label><br>
-            <input type="text" id="author" name="author" required>
-        </div><br>
+            <div class="form-reason">
+                <label for="author">Author:</label><br>
+                <input type="text" id="author" name="author" required>
+            </div><br>
 
-        <div class="start-end-time">
-            <label for="startdate">Start (Date and Time):</label>
-            <input type="date" id="startdate" name="startdate" required><br>
+            <div class="start-end-time">
+                <label for="startdate">Start (Date and Time):</label>
+                <input type="date" id="startdate" name="startdate" required><br>
 
-            <label for="enddate">End (Date and Time):</label>
-            <input type="date" id="enddate" name="enddate" required><br>
-        </div> <br>
+                <label for="enddate">End (Date and Time):</label>
+                <input type="date" id="enddate" name="enddate" required><br>
+            </div> <br>
 
-        <div class="form-category">
-            <label for="location">Location:</label>
-            <select name="location" class="location" size="1" id="location" required>
-                <option value="" disabled selected>Pick One</option>
-                <option value="main-field">Main Field</option>
-                <option value="maze">Corn Field</option>
-                <option value="hanted-house">Haunted House Picnic Tables</option>
-                <option value="pumpkin-carving">Pumpkin Field</option>
-                <option value="Other">Other</option>
-            </select>
-        </div><br>
+            <div class="form-name">
+                <label for="location">Location:</label><br>
+                <input type="text" id="location" name="location" required>
+            </div><br>
 
-        <div class="form-name">
-            <label for="content">Skill Level:</label><br>
-            <input type="text" id="content" name="content" required>
-        </div><br>
+            <div class="form-category">
+                <label for="category">Category:</label>
+                <select name="category" class="category" size="1" id="category" required>
+                    <option value="" disabled selected>Pick One</option>
+                    <option value="hay">hay</option>
+                    <option value="maze">maze</option>
+                    <option value="carving">carving</option>
+                    <option value="haunted">haunted</option>
+                    <option value="other">other</option>
+                </select>
+            </div><br>
 
-        <div class="form-pic">
-            <label for="image">Event Picture:</label><br>
-            <input type="file" class="guest-pic" accept="image/*" id=pic>
-        </div><br><br>
+            <div class="form-category">
+                <label for="skill">Skill Level:</label>
+                <select name="skill" class="skill" size="1" id="skill" required>
+                    <option value="" disabled selected>Pick One</option>
+                    <option value="Easy (All ages)">Easy (All ages)</option>
+                    <option value="Intermediate (6 and up)">Intermediate (6 and up)</option>
+                    <option value="Expert (12 and up)">Expert (12 and up)</option>
+                </select>
+            </div><br>
 
-        <div class="button">
-            <input type="submit" value="Submit">
-            <input type="reset" value="Clear">
-        </div>
-    </form>
-</main>
+            <div class="form-pic">
+                <label for="image">Event Picture:</label><br>
+                <input type="file" class="guest-pic" accept="image/*" id=pic>
+            </div><br><br>
+
+            <div class="button">
+                <input type="submit" value="Submit">
+                <input type="reset" value="Clear">
+            </div>
+        </form>
+    </main>
 
     <%- include('../partials/footer.ejs')%>
