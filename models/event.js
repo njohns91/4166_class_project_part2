@@ -5,8 +5,8 @@ const events = [
     {
         id: '1',
         title: 'Hay Bail Ride',
-        starttime: '9/25/2023', 
-        endtime:'11/15/2023',
+        startdate: '9/25/2023', 
+        enddate:'11/15/2023',
         location: 'Main Field',
         content: 'Red Tractor (Short Path), '+ 'Blue Tractor (Medium path), '+'Green Tractor (Long Path)',
         image:'',
@@ -16,8 +16,8 @@ const events = [
     {
         id: '2',
         title: 'Corn Maze',
-        starttime: '9/25/2023', 
-        endtime:'11/20/2023',
+        startdate: '9/25/2023', 
+        enddate:'11/20/2023',
         location: 'Corn Field',
         content: 'Beginner (All Ages), ' + 'Intermediate (6 and up), '+ 'Expert (12 and up)',
         image: '',
