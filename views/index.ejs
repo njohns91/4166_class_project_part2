@@ -1,33 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <title>Nightmare Lane</title>
-    <link rel="shortcut icon" href="images/title-logo.jpeg">
-    <link href="/css/style.css" rel="stylesheet">
-</head>
-
-<body>
-    <header class="page-header">
-        <div class="page-head">
-            <a href="index.html"><img src="/images/logo.jpeg" class="logo" alt="main logo"></a>
-        </div>
-    
-        <nav class="header-nav">
-        <ul>
-            <li><a href="newEvent">New Reservation</a></li> 
-            <li><a href=" ">Sign Up</a></li> 
-            <li><a href=" ">Log in</a></li> 
-        </ul>
-        </nav>
-    </header>
-
-    <div class="page-events">
-        <ul class="event">
-            <li><a href="/events">Events</a></li>
-        </ul>
-    </div>
+<%- include('./partials/header.ejs')%>
 
     <main>
         <div class="welcome">
@@ -51,25 +22,4 @@
 
     </main>
 
-    <Footer>
-        <nav class="footer-nav">
-            <div class="footer-bottom">
-    
-                <ul>
-                    <li><h3 class="copyright">Nightmare Land &copy; 2023</h3></li>
-                    <li><h3><a href=" ">About</a></h3></li>
-                    <li><h3><a href=" ">Contact</a></h3></li>
-                    <div id="social">
-                        <li><img src="images/twitter.png" class = "social" > </li>
-                        <li><img src="images/facebook.png" class = "social" > </li>
-                    </div>
-                </ul>
-    
-            </div>
-    
-    
-        </nav>
-    </Footer>
-</body>
-
-</html>
+    <%- include('./partials/footer.ejs')%>
