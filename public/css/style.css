@@ -163,6 +163,15 @@ footer
 .both-events p{
     text-align: center;
     font-size: small;
+    font-family: nunito;
+    color: black;
+}
+
+.both-events h4
+{
+    padding-left: 5cm;
+    font-family: nunito;
+    color: black;
 }
 /* ******** Events END ******** */
 

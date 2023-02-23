@@ -5,13 +5,16 @@ exports.index = (req, res) => {
     res.render('./event/index', { events });
 };
 
-exports.new = ('/newEvent', (req, res) => {
+exports.new = (req, res) => {
     res.render('./event/newEvent');
-});
+};
 
-exports.create = ('/', (req, res) => {
-    res.send('created a new event');
-});
+exports.create = (req, res) => {
+    //res.send('Created a new story');
+    let event = req.body;
+    model.save(event);
+    res.redirect('/events');
+};
 
 exports.show = (req,res, next) => {
     let id = req.params.id;
