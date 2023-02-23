@@ -16,4 +16,4 @@ const events = [
         author: 'Nick Johnson',
         createdAt: DateTime.now().toLocaleString(DateTime.DATETIME_SHORT)
     }
-]
+];
