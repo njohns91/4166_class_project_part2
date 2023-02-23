@@ -13,9 +13,17 @@ exports.create = ('/', (req, res) => {
     res.send('created a new event');
 });
 
-exports.show = ('/:id', (req, res) => {
-    res.send('Send event with id ' + req.params.id);
-});
+exports.show = (req,res, next) => {
+    let id = req.params.id;
+    let events = model.findById(id);
+    if(events) {
+        res.render('./event/show', {events})
+    }else {
+        let err = new Error('Cannot find a story with id ' +id)
+        err.status = 404;
+        next(err);
+    }
+};
 
 exports.edit = ('/:id/edit', (req, res) => {
     res.send('Send edit form');

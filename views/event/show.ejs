@@ -1,0 +1,15 @@
+<%- include('../partials/header.ejs')%>
+    <div class=events-header>
+        <div class='both-events'>
+            <main>
+                <h1><%= events.title%></h1>
+                <p>Posted <%= events.createdAt%> by <%=events.author%></p><br>
+                <h2><%= events.content1%></h2>
+                <h2><%= events.content2%></h2>
+                <h2><%= events.content3%></h2>
+            </main>
+        </div>
+    </div>
+
+
+    <%- include('../partials/footer.ejs')%>
