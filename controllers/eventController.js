@@ -1,5 +1,8 @@
+const model = require('../models/event');
+
 exports.index = (req, res) => {
-    res.send('Send all events');
+    let events = model.find();
+    res.render('./event/index', { events });
 };
 
 exports.new = ('/new', (req, res) => {

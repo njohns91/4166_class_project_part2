@@ -13,17 +13,17 @@ app.set('view engine', 'ejs');
 
 //mount middleware
 app.use(express.static('public'));
-app.use(express.urlencoded({extended: true}));
+app.use(express.urlencoded({ extended: true }));
 app.use(morgan('tiny'));
 
 //set up routes
-app.get('/', (req, res)=>{
+app.get('/', (req, res) => {
     res.render('index');
 });
 
 app.use('/events', eventRoutes);
 
 //start the server
-app.listen(port, host, () =>{
+app.listen(port, host, () => {
     console.log('Server is runnint on port', port);
 });
