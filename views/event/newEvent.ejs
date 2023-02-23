@@ -1,0 +1,51 @@
+<%- include('../partials/header.ejs')%>
+<main>
+    <form>
+        <div class="new-header">
+            <h1>New Event</h1>
+            <br>
+        </div>
+
+        <div class="form-name">
+            <label for="title">Event Name:</label><br>
+            <textarea id="name" class="name" rows="1" cols="25" required></textarea>
+        </div><br>
+
+        <div class="form-reason">
+            <label for="author">Author:</label><br>
+            <textarea id="reason" class="reason" rows="1" cols="25" required></textarea>
+        </div><br>
+
+        <div class="start-end-time">
+            <label for="starttime">Start (Date and Time):</label>
+            <input type="datetime-local" id="starttime" required><br>
+
+            <label for="endtime">End (Date and Time):</label>
+            <input type="datetime-local"  id="endtime" required>
+        </div> <br>
+
+        <div class="form-category">
+            <label for="location">Location:</label>
+            <select name="attractions" class="city" size="1" id="attraction" required>
+                <option value="" disabled selected>Pick One</option>
+                <option value="main-field">Main Field</option>
+                <option value="maze">Corn Maze</option>
+                <option value="hanted-house">Haunted House</option>
+                <option value="pumpkin-carving">Pumpkin Carving</option>
+                <option value="Other">Other</option>
+            </select>
+        </div><br>
+
+        <div class="form-pic">
+            <label for="pic">Event Picture:</label><br>
+            <input type="file" class="guest-pic" accept="image/*" id=pic required>
+        </div><br><br>
+
+        <div class="button">
+            <input type="submit" value="Submit">
+            <input type="reset" value="Clear">
+        </div>
+    </form>
+</main>
+
+    <%- include('../partials/footer.ejs')%>

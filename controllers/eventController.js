@@ -5,8 +5,8 @@ exports.index = (req, res) => {
     res.render('./event/index', { events });
 };
 
-exports.new = ('/new', (req, res) => {
-    res.send('Send the new form');
+exports.new = ('/newEvent', (req, res) => {
+    res.render('./event/newEvent');
 });
 
 exports.create = ('/', (req, res) => {
