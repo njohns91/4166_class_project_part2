@@ -2,7 +2,14 @@ const model = require('../models/event');
 
 exports.index = (req, res) => {
     let events = model.find();
-    res.render('./event/index', { events });
+    res.render('./event/index', { 
+        events: model.find(),
+        hay: model.findByCategory("hay"),
+        maze: model.findByCategory("maze"),
+        carving: model.findByCategory("carving"),
+        haunted: model.findByCategory("haunted"),
+        other: model.findByCategory("other"),
+    });
 };
 
 exports.new = (req, res) => {

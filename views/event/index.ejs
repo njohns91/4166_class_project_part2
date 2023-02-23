@@ -2,17 +2,68 @@
     <div class=events-header>
         <div class='both-events'>
             <main>
-                <%if(events.length) {%>
-                    <h1>Select a Event</h1>
-                    <%events.forEach(event=>{%>
-                        <a href="/events/<%= event.id%>">
-                            <h2>
-                                <%= event.title%>
-                            </h2>
-                        </a>
-                        <% }); } else {%>
-                            <p>There are no events to display.</p>
-                            <%}%>
+                <% if(events.length) { %>
+                    <div id='left'>
+                        <% if(hay.length) { %>
+                            <h2>Hay Bail Riding</h2>
+                            <% hay.forEach(event=> { %>
+                                <a href="/events/<%= event.id %>">
+                                    <h4>
+                                        <%= event.title %>
+                                    </h4>
+                                </a>
+                                <% }) %>
+                                    <% } %>
+                                        <% if(maze.length) { %>
+                                            <h2>Corn Maze</h2>
+                                            <% maze.forEach(event=> { %>
+                                                <a href="/events/<%= event.id %>">
+                                                    <h4>
+                                                        <%= event.title %>
+                                                    </h4>
+                                                </a>
+                                                <% }) %>
+                                                    <% } %>
+                    </div>
+                    <div id='middle'>
+                        <% if(carving.length) { %>
+                            <h2>Carving</h2>
+                            <% carving.forEach(event=> { %>
+                                <a href="/events/<%= event.id %>">
+                                    <h4>
+                                        <%= event.title %>
+                                    </h4>
+                                </a>
+                                <% }) %>
+                                    <% } %>
+                                        <% if(haunted.length) { %>
+                                            <h2>Haunted</h2>
+                                            <% haunted.forEach(event=> { %>
+                                                <a href="/events/<%= event.id %>">
+                                                    <h4>
+                                                        <%= event.title %>
+                                                    </h4>
+                                                </a>
+                                                <% }) %>
+                                                    <% } %>
+                    </div>
+                    <div id='right'>
+                        <% if(other.length) { %>
+                            <h2>Other</h2>
+                            <% other.forEach(event=> { %>
+                                <a href="/events/<%= event.id %>">
+                                    <h4>
+                                        <%= event.title %>
+                                    </h4>
+                                </a>
+                                <% }) %>
+                                    <% } %>
+                    </div>
+                    <% } else { %>
+                        <div id='no-events'>
+                            <h2>There are no events to display.</h2>
+                        </div>
+                        <% } %>
             </main>
         </div>
     </div>
