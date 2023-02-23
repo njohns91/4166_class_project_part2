@@ -1,0 +1,50 @@
+<%- include('../partials/header.ejs')%>
+    <div class="edit-page">
+
+        <form method = "POST" action = "/event/<%= events.id%>?_method=PUT" class="new-form">
+
+            <label for="title">Title</label>
+            <input type="text" id="title" name="title" value="<%= events.title%>"><br><br>
+
+            <label for="author">Author</label>
+            <input type="text" id="author" name="author" value="<%= events.author%>"><br><br>
+
+            <label for="startdate">Start (Date and Time):</label>
+            <input type="text" id="startdate" name="startdate" value="<%= events.startdate%>"><br><br>
+
+            <label for="enddate">End (Date and Time):</label>
+            <input type="text" id="enddate" name="enddate" value="<%= events.enddate%>"><br><br>
+
+            <label for="location">Location</label>
+            <input type="text" id="location" name="location" value="<%= events.location%>"><br><br>
+
+            <label for="category">Category:</label>
+            <select name="category" class="category" size="1" id="category">
+                <option value=" ">
+                    <%= events.category%>
+                </option>
+                <option value="hay">hay</option>
+                <option value="maze">maze</option>
+                <option value="carving">carving</option>
+                <option value="haunted">haunted</option>
+                <option value="other">other</option>
+            </select><br><br>
+
+            <label for="skill">Skill Level:</label>
+            <select name="skill" class="skill" size="1" id="skill">
+                <option value="">
+                    <%= events.skill%>
+                </option>
+                <option value="Easy (All ages)">Easy (All ages)</option>
+                <option value="Intermediate (6 and up)">Intermediate (6 and up)</option>
+                <option value="Expert (12 and up)">Expert (12 and up)</option>
+            </select><br><br>
+
+            <label for="image">Event Picture:</label><br>
+            <input type="file" class="guest-pic" accept="image/*" id=pic name="image"><br><br>
+
+            <input type="submit" value="Submit">
+        </form>
+
+    </div>
+    <%- include('../partials/footer.ejs')%>

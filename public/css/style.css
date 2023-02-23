@@ -289,3 +289,17 @@ option
 }
 
 /* ******** Event End ******** */
+
+/* ******** Edit start ******** */
+
+.edit-page
+{
+    font-family: nunito;
+    float:left;
+    text-align: left;
+    padding-left: 250px;
+    padding-top: 30px;
+
+}
+
+/* ******** Edit End ******** */

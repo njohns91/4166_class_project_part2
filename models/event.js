@@ -126,3 +126,19 @@ exports.save = function (event){
     events.push(event);
 }
 
+exports.updateById = function(id, newEvent) {
+    let event = events.find(event=>event.id === id);
+    if(event) {
+    event.title = newEvent.title;
+    event.startdate = newEvent.startdate;
+    event.enddate = newEvent.enddate;
+    event.location = newEvent.location;
+    console.log(newEvent);
+    if(newEvent.image){
+    event.image = newEvent.image;
+    }
+    return true;
+    } else {
+        return false;
+    }
+}

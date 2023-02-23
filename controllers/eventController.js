@@ -13,7 +13,7 @@ exports.index = (req, res) => {
 };
 
 exports.new = (req, res) => {
-    res.render('./event/newEvent');
+    res.render('./event/new');
 };
 
 exports.create = (req, res) => {
@@ -35,13 +35,20 @@ exports.show = (req,res, next) => {
     }
 };
 
-exports.edit = ('/:id/edit', (req, res) => {
-    res.send('Send edit form');
-});
-
-exports.update = ('/:id', (req, res) => {
-    res.send('Update event with id ' + req.params.id);
-});
+exports.edit = (req,res, next) => {
+    let id = req.params.id;
+    let events = model.findById(id);
+    if(events) {
+        res.render('./event/edit', {events})
+    }else {
+        let err = new Error('Cannot find a story with id ' +id)
+        err.status = 404;
+        next(err);
+    }
+};
+exports.update = (req,res, next) => {
+    res.send('updated event');
+};
 
 exports.delete = ('/:id', (req, res) => {
     res.send('Delete event with id ' + req.params.id);
