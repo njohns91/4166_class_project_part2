@@ -34,7 +34,7 @@ const events = [
         startdate: '9/25/2023', 
         enddate:'11/15/2023',
         location: 'Main Field',
-        image:'',
+        image:'/images/red_tractor.jpeg',
         host: 'Nick Johnson',
         createdAt: DateTime.now().toLocaleString(DateTime.DATETIME_SHORT)
     },

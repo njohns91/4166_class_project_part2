@@ -7,6 +7,7 @@
                 <h4>Date: <%= events.startdate%> - <%= events.enddate%></h4>
                 <h4>Location: <%= events.location%></h4>
                 <h4>Skill Level: <%= events.skill%></h4>
+                <%= events.image%>
                 <form>
                     <button type="submit" formmethod="GET" formaction="/events/<%= events.id%>/edit">Edit</button>
                     <button type="submit" formmethod="POST" formaction="/events/<%= events.id%>?_method=DELETE">Delete</button>

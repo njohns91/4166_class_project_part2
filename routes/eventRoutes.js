@@ -18,7 +18,7 @@ router.get('/:id', controller.show);
 router.get('/:id/edit', controller.edit);
 
 //PUT /events/:id: update the story identified by id
-router.post('/:id', controller.update);
+router.put('/:id', controller.update);
 
 //DELETE /events/:id, delete the story identified by id
 router.delete('/:id', controller.delete);
