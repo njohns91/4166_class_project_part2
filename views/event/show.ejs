@@ -5,14 +5,20 @@
                 <h1>
                     <%= events.title%>
                 </h1>
+
                 <p>Posted <%= events.createdAt%> by <%=events.host%>
                 </p><br>
+
                 <h4>Date: <%= events.startdate%> - <%= events.enddate%>
                 </h4>
+
                 <h4>Location: <%= events.location%>
                 </h4>
+
                 <h4>Skill Level: <%= events.skill%>
                 </h4>
+
+                <img src="<%= event.image%>" alt="Image" style="width: 15%">
 
                 <div class="buttons">
                     <form>
