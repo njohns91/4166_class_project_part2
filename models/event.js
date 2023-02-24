@@ -10,7 +10,7 @@ const events = [
         startdate: '9/25/2023 5:00pm',
         enddate: '9/25/2023 9:00pm',
         location: 'Main Field',
-        image: '/images/green_tractor.jfif',
+        image: '/images/green_tractor.png',
         host: 'Nick Johnson',
         duration:'~5 Minutes',
         createdAt: DateTime.now().toLocaleString(DateTime.DATETIME_SHORT)
@@ -23,7 +23,7 @@ const events = [
         startdate: '9/25/2023 5:00pm',
         enddate: '9/25/2023 9:00pm',
         location: 'Main Field',
-        image: '/images/blue_tractor.jfif',
+        image: '/images/blue_tractor.png',
         host: 'Nick Johnson',
         duration:'~10 mins',
         createdAt: DateTime.now().toLocaleString(DateTime.DATETIME_SHORT)
@@ -88,7 +88,7 @@ const events = [
         startdate: '9/28/2023 4:00pm',
         enddate: '9/28/2023 8:00pm',
         location: 'Pumpkin field',
-        image: '/images/pumpkin.jfif',
+        image: '/images/pumpkin.png',
         host: 'Nick Johnson',
         duration: '~60 mins',
         createdAt: DateTime.now().toLocaleString(DateTime.DATETIME_SHORT)
@@ -101,7 +101,7 @@ const events = [
         startdate: '9/01/2023 4:00pm',
         enddate: '10/311/2023 8:00pm',
         location: 'Main Field',
-        image: '/images/woodcomb.jfif',
+        image: '/images/woodcomb.png',
         host: 'Nick Johnson',
         duration: '~60+ mins',
         createdAt: DateTime.now().toLocaleString(DateTime.DATETIME_SHORT)
@@ -140,7 +140,7 @@ const events = [
         startdate: '9/18/2023 6:00pm',
         enddate: '9/20/2023 9:00pm',
         location: 'Corn Field',
-        image: '/images/hauntedforest.jfif',
+        image: '/images/hauntedforest.png',
         host: 'Nick Johnson',
         duration: '~45 mins',
         createdAt: DateTime.now().toLocaleString(DateTime.DATETIME_SHORT)
@@ -153,7 +153,7 @@ const events = [
         startdate: '9/18/2023 6:00pm',
         enddate: '9/20/2023 9:00pm',
         location: 'Corn Field',
-        image: '/images/hauntedcabin.jfif',
+        image: '/images/hauntedcabin.png',
         host: 'Nick Johnson',
         duration: '~10 mins',
         createdAt: DateTime.now().toLocaleString(DateTime.DATETIME_SHORT)

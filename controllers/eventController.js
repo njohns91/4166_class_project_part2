@@ -19,6 +19,7 @@ exports.new = (req, res) => {
 exports.create = (req, res) => {
     //res.send('Created a new story');
     let event = req.body;
+    event.image = "/images/" + req.file.filename
     model.save(event);
     res.redirect('/events');
 };
@@ -38,6 +39,9 @@ exports.show = (req, res, next) => {
 exports.edit = (req, res, next) => {
     let id = req.params.id;
     let events = model.findById(id);
+    if(req.file){
+        events.image = "/images/" + req.file.filename 
+    }
     if (events) {
         res.render('./event/edit', { events });
     } else {
