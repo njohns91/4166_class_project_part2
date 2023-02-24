@@ -2,16 +2,25 @@
     <div class=events-header>
         <div class='both-events'>
             <main>
-                <h1><%= events.title%></h1>
-                <p>Posted <%= events.createdAt%> by <%=events.host%></p><br>
-                <h4>Date: <%= events.startdate%> - <%= events.enddate%></h4>
-                <h4>Location: <%= events.location%></h4>
-                <h4>Skill Level: <%= events.skill%></h4>
-                
-                <form>
-                    <button type="submit" formmethod="GET" formaction="/events/<%= events.id%>/edit">Edit</button>
-                    <button type="submit" formmethod="POST" formaction="/events/<%= events.id%>?_method=DELETE">Delete</button>
-                </form>
+                <h1>
+                    <%= events.title%>
+                </h1>
+                <p>Posted <%= events.createdAt%> by <%=events.host%>
+                </p><br>
+                <h4>Date: <%= events.startdate%> - <%= events.enddate%>
+                </h4>
+                <h4>Location: <%= events.location%>
+                </h4>
+                <h4>Skill Level: <%= events.skill%>
+                </h4>
+
+                <div class="buttons">
+                    <form>
+                        <button type="submit" formmethod="GET" formaction="/events/<%= events.id%>/edit">Edit</button>
+                        <button type="submit" formmethod="POST"
+                            formaction="/events/<%= events.id%>?_method=DELETE">Delete</button>
+                    </form>
+                </div>
             </main>
         </div>
     </div>
