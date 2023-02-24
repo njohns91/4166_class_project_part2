@@ -12,7 +12,7 @@ router.get('/new', controller.new);
 router.post('/', controller.create)
 
 //GET /events/:id: send details of evetn identified by id
-router.get('/:id', controller.show);
+router.get('/:id',  controller.show);
 
 //GET /events/:id/edit: send html form for editing an existing event
 router.get('/:id/edit', controller.edit);

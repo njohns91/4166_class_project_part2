@@ -242,12 +242,9 @@ s option {
     padding-top: 3cm;
 }
 
-.tractor-red {
-    height: 10%;
+.event-pic img {
     width: 10%;
-    padding-left: 6cm;
-    float: left;
-    margin: 0cm;
+    padding-left: 250px;
 }
 
 .basic-info {

@@ -24,6 +24,8 @@ app.get('/', (req, res) => {
     res.render('index');
 });
 
+
+
 app.use("/", mainRoutes)
 app.use('/events', eventRoutes);
 

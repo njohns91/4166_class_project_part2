@@ -18,6 +18,10 @@
                 <h4>Skill Level: <%= events.skill%>
                 </h4>
 
+                <div class = event-pic>
+                    <img src="<%= events.image%>">
+                </div><br>
+
                 <div class="buttons">
                     <form>
                         <button type="submit" formmethod="GET" formaction="/events/<%= events.id%>/edit">Edit</button>

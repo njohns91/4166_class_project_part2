@@ -9,10 +9,10 @@
             <input type="text" id="host" name="host" value="<%= events.host%>"><br><br>
 
             <label for="startdate">Start (Date and Time):</label>
-            <input type="text" id="startdate" name="startdate" value="<%= events.startdate%>"><br><br>
+            <input type="datetime-local" id="startdate" name="startdate" value="<%= events.startdate%>"><br><br>
 
             <label for="enddate">End (Date and Time):</label>
-            <input type="text" id="enddate" name="enddate" value="<%= events.enddate%>"><br><br>
+            <input type="datetime-local" id="enddate" name="enddate" value="<%= events.enddate%>"><br><br>
 
             <label for="location">Location</label>
             <input type="text" id="location" name="location" value="<%= events.location%>"><br><br>
@@ -39,8 +39,8 @@
                 <option value="Expert (12 and up)">Expert (12 and up)</option>
             </select><br><br>
 
-            <label for="image">Event Picture:</label><br>
-            <input type="file" class="guest-pic" accept="image/*" id=pic name="image"><br><br>
+            <label for="image">Image</label>
+            <input type="file" id="image" name="image"><br><br>
 
             <input type="submit" value="Submit">
         </form>
