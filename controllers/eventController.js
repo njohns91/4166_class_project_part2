@@ -50,11 +50,8 @@ exports.edit = (req, res, next)=>{
 exports.update = (req, res, next)=>{
     let events = req.body;
     let id = req.params.id;
-    if (req.file){
-    events.image = "/images/" + req.file.filename;
-    }
     if (model.updateById(id, events)) {
-        res.redirect('/event/' +id);
+        res.redirect('/events/' +id);
     } else {
         let err = new Error('Cannot find a event with id ' + id);
         err.status = 404;

@@ -134,7 +134,6 @@ exports.updateById = function(id, newEvent) {
     event.startdate = newEvent.startdate;
     event.enddate = newEvent.enddate;
     event.location = newEvent.location;
-    console.log(newEvent);
     if(newEvent.image){
     event.image = newEvent.image;
     }
