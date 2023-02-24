@@ -3,6 +3,7 @@ const express = require('express');
 const morgan = require('morgan');
 const methodOverride=require('method-override');
 const eventRoutes = require('./routes/eventRoutes');
+const mainRoutes = require('./routes/mainRoutes')
 
 //create application
 const app = express();
@@ -23,7 +24,26 @@ app.get('/', (req, res) => {
     res.render('index');
 });
 
+app.use("/", mainRoutes)
 app.use('/events', eventRoutes);
+
+app.use((req, res, next) =>{
+    let err = new Error('The server cannot locate ' +req.url);
+    err.status = 404;
+    next(err);
+    console.log(err.stack);
+});
+
+
+app.use((err, req, res, next) =>{
+    console.log(err.stack);
+    if(!err.status) {
+        err.status = 500;
+        err.message = ("Internal Server Error");
+    }
+    res.status(err.status);
+    res.render('error', {error: err});
+});
 
 //start the server
 app.listen(port, host, () => {

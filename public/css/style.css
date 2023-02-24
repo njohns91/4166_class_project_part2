@@ -308,3 +308,34 @@ option
 }
 
 /* ******** Edit End ******** */
+
+/* ******** Error Start ******** */
+
+.error-mes h3, p
+{
+    text-align: center;
+    font-family: nunito;
+}
+
+/* ******** Edit End ******** */
+
+/* ******** About Start ******** */
+.about h1,p,h3
+{
+    text-align: center;
+    font-family: nunito;
+}
+/* ******** About End ******** */
+
+/* ******** Contact Start ******** */
+.about h1,p,h3,small
+{
+    text-align: center;
+    font-family: nunito;
+}
+
+small
+{
+    padding-left: 30px;
+}
+/* ******** Contact End ******** */
