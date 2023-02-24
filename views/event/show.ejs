@@ -9,6 +9,7 @@
                 <h4>Skill Level: <%= events.skill%></h4>
                 <form>
                     <button type="submit" formmethod="GET" formaction="/events/<%= events.id%>/edit">Edit</button>
+                    <button type="submit" formmethod="POST" formaction="/events/<%= events.id%>?_method=DELETE">Delete</button>
                 </form>
             </main>
         </div>

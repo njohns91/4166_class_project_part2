@@ -35,21 +35,40 @@ exports.show = (req,res, next) => {
     }
 };
 
-exports.edit = (req,res, next) => {
+exports.edit = (req, res, next)=>{
     let id = req.params.id;
     let events = model.findById(id);
-    if(events) {
-        res.render('./event/edit', {events})
-    }else {
-        let err = new Error('Cannot find a story with id ' +id)
+    if(events){
+        res.render('./event/edit', {events});
+    } else {
+        let err = new Error('Cannot find a event with id ' + id);
         err.status = 404;
         next(err);
     }
 };
-exports.update = (req,res, next) => {
-    res.send('updated event');
+
+exports.update = (req, res, next)=>{
+    let events = req.body;
+    let id = req.params.id;
+    if (req.file){
+    events.image = "/images/" + req.file.filename;
+    }
+    if (model.updateById(id, events)) {
+        res.redirect('/event/'+id);
+    } else {
+        let err = new Error('Cannot find a event with id ' + id);
+        err.status = 404;
+        next(err);
+    }
 };
 
-exports.delete = ('/:id', (req, res) => {
-    res.send('Delete event with id ' + req.params.id);
-});
+exports.delete = (req, res, next)=>{
+    let id = req.params.id;
+    if(model.deleteById(id)) {
+        res.redirect('/events');
+    } else {
+    let err = new Error('Cannot find a event with id ' + id);
+    err.status = 404;
+    next(err);
+    }
+};

@@ -130,6 +130,7 @@ exports.updateById = function(id, newEvent) {
     let event = events.find(event=>event.id === id);
     if(event) {
     event.title = newEvent.title;
+    event.content = newEvent.content;
     event.startdate = newEvent.startdate;
     event.enddate = newEvent.enddate;
     event.location = newEvent.location;
@@ -138,6 +139,16 @@ exports.updateById = function(id, newEvent) {
     event.image = newEvent.image;
     }
     return true;
+    } else {
+        return false;
+    }
+}
+
+exports.deleteById = function(id) {
+    let index = events.findIndex(event => event.id === id)
+    if(index !== -1) {
+        events.splice(index, 1);
+        return true;
     } else {
         return false;
     }
