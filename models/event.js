@@ -12,6 +12,7 @@ const events = [
         location: 'Main Field',
         image: '/images/green_tractor.jfif',
         host: 'Nick Johnson',
+        duration:'~5 Minutes',
         createdAt: DateTime.now().toLocaleString(DateTime.DATETIME_SHORT)
     },
     {
@@ -24,6 +25,7 @@ const events = [
         location: 'Main Field',
         image: '/images/blue_tractor.jfif',
         host: 'Nick Johnson',
+        duration:'~10 mins',
         createdAt: DateTime.now().toLocaleString(DateTime.DATETIME_SHORT)
     },
     {
@@ -36,6 +38,7 @@ const events = [
         location: 'Main Field',
         image: '/images/red_tractor.jpg',
         host: 'Nick Johnson',
+        duration:'~15 minues',
         createdAt: DateTime.now().toLocaleString(DateTime.DATETIME_SHORT)
     },
     {
@@ -48,6 +51,7 @@ const events = [
         location: 'Corn Field',
         image: '/images/corn_maze.jpg',
         host: 'Nick Johnson',
+        duration: '~10 mins',
         createdAt: DateTime.now().toLocaleString(DateTime.DATETIME_SHORT)
     },
     {
@@ -60,6 +64,7 @@ const events = [
         location: 'Corn Field',
         image: '/images/corn_maze.jpg',
         host: 'Nick Johnson',
+        duration: '~30 mins',
         createdAt: DateTime.now().toLocaleString(DateTime.DATETIME_SHORT)
     },
     {
@@ -72,6 +77,7 @@ const events = [
         location: 'Corn Field',
         image: '/images/corn_maze.jpg',
         host: 'Nick Johnson',
+        duration: '~45 mins',
         createdAt: DateTime.now().toLocaleString(DateTime.DATETIME_SHORT)
     },
     {
@@ -84,30 +90,72 @@ const events = [
         location: 'Pumpkin field',
         image: '/images/pumpkin.jfif',
         host: 'Nick Johnson',
+        duration: '~60 mins',
         createdAt: DateTime.now().toLocaleString(DateTime.DATETIME_SHORT)
     },
     {
         id: '8',
-        category: 'haunted',
-        title: 'Haunted house',
+        category: 'carving',
+        title: 'Wood Carving (Combs)',
         skill: 'Intermediate (6 and up)',
-        startdate: '9/01/2023 6:00pm',
-        enddate: '10/311/2023 9:00pm',
-        location: 'Haunted House',
-        image: '/images/haunted_house.png',
+        startdate: '9/01/2023 4:00pm',
+        enddate: '10/311/2023 8:00pm',
+        location: 'Main Field',
+        image: '/images/woodcomb.jfif',
         host: 'Nick Johnson',
+        duration: '~60+ mins',
         createdAt: DateTime.now().toLocaleString(DateTime.DATETIME_SHORT)
     },
     {
         id: '9',
-        category: 'other',
-        title: 'Corn Husking',
+        category: 'carving',
+        title: 'Wood Carving (Wands)',
         skill: 'Easy (All ages)',
         startdate: '9/18/2023 3:00pm',
         enddate: '9/20/2023 6:00pm',
         location: 'Corn Field',
-        image: '/images/corn_husking.jfif',
+        image: '/images/woodenwand.jpg',
         host: 'Nick Johnson',
+        duration: '~30 mins',
+        createdAt: DateTime.now().toLocaleString(DateTime.DATETIME_SHORT)
+    },
+    {
+        id: '10',
+        category: 'haunted',
+        title: 'Haunted House',
+        skill: 'Easy (All ages)',
+        startdate: '9/18/2023 6:00pm',
+        enddate: '9/20/2023 9:00pm',
+        location: 'Corn Field',
+        image: '/images/haunted_house.png',
+        host: 'Nick Johnson',
+        duration: '~20 mins',
+        createdAt: DateTime.now().toLocaleString(DateTime.DATETIME_SHORT)
+    },
+    {
+        id: '11',
+        category: 'haunted',
+        title: 'Haunted Forest',
+        skill: 'Easy (All ages)',
+        startdate: '9/18/2023 6:00pm',
+        enddate: '9/20/2023 9:00pm',
+        location: 'Corn Field',
+        image: '/images/hauntedforest.jfif',
+        host: 'Nick Johnson',
+        duration: '~45 mins',
+        createdAt: DateTime.now().toLocaleString(DateTime.DATETIME_SHORT)
+    },
+    {
+        id: '12',
+        category: 'haunted',
+        title: 'Haunted Cabin',
+        skill: 'Easy (All ages)',
+        startdate: '9/18/2023 6:00pm',
+        enddate: '9/20/2023 9:00pm',
+        location: 'Corn Field',
+        image: '/images/hauntedcabin.jfif',
+        host: 'Nick Johnson',
+        duration: '~10 mins',
         createdAt: DateTime.now().toLocaleString(DateTime.DATETIME_SHORT)
     },
 ];
