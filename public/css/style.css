@@ -4,8 +4,7 @@
 /* ******** INDEX START ******** */
 /*Body*/
 
-body
-{
+body {
     margin: 0px;
     min-height: 100vh;
     display: flex;
@@ -13,7 +12,7 @@ body
 }
 
 /*Header*/
-.page-header { 
+.page-header {
     background-color: #2C462C;
     padding: 10px;
     border-bottom: #F4924B 2px dotted;
@@ -22,7 +21,7 @@ body
 .page-head {
     float: left;
     margin: 0px;
-}  
+}
 
 .logo {
     width: 150px;
@@ -50,8 +49,7 @@ body
     font-family: lobster;
 }
 
-.header-nav li :hover
-{
+.header-nav li :hover {
     text-decoration: underline;
 }
 
@@ -67,45 +65,39 @@ body
     background-color: #2C462C;
 }
 
-.page-events a
-{
+.page-events a {
     text-decoration: none;
     color: #F4924B;
     font-family: lobster;
     font-size: xx-large;
 }
 
-.page-events li :hover
-{
+.page-events li :hover {
     text-decoration: underline;
 }
 
 /*Main*/
 
-.welcome h1
-{
+.welcome h1 {
     font-family: nunito;
     text-align: center;
     font-size: xx-large;
 }
 
-.intro-para
-{
+.intro-para {
     font-size: medium;
     font-family: nunito;
     text-align: center;
 }
 
 /*Footer*/
-footer
-{
+footer {
     margin-top: auto;
     background-color: #2C462C;
 }
 
 
-.footer-nav h3
-{
+.footer-nav h3 {
     float: left;
     font-size: large;
     font-family: nunito;
@@ -113,23 +105,22 @@ footer
     padding-left: 30px;
 }
 
-.footer-bottom li
-{
+.footer-bottom li {
     display: inline-block;
     align-items: center;
 }
 
-.footer-bottom a
-{
+.footer-bottom a {
     color: #F4924B;
     text-decoration: none;
 }
 
-#social{
+#social {
     float: right;
     padding-right: 40px;
 }
-.socials{
+
+.socials {
     width: 30px;
     padding-top: 17px;
     padding-left: 30px;
@@ -138,8 +129,7 @@ footer
 /* ******** INDEX END ******** */
 
 /* ******** Events Start ******** */
-.events-header h1
-{
+.events-header h1 {
     font-family: nunito;
     text-align: center;
     font-size: xx-large;
@@ -147,31 +137,28 @@ footer
     padding-bottom: 0px;
 }
 
-.both-events h2
-{
+.both-events h2 {
     padding-left: 5cm;
     font-family: nunito;
     font-size: x-large;
     text-align: left;
 }
 
-.both-events a
-{
+.both-events a {
     text-decoration: none;
     padding-left: 6cm;
     font-family: nunito;
     color: black;
 }
 
-.both-events p{
+.both-events p {
     text-align: center;
     font-size: small;
     font-family: nunito;
     color: black;
 }
 
-.both-events h4
-{
+.both-events h4 {
     padding-left: 6cm;
     font-family: nunito;
     color: #2C462C;
@@ -179,97 +166,83 @@ footer
     padding-bottom: 10px;
 }
 
-#left
-{
+#left {
     float: left;
 }
 
-#middle
-{
+#middle {
     float: left;
     margin-left: 100px;
 }
 
-#right
-{
+#right {
     float: left;
     margin-left: 200px;
 }
 
-#no-events h2
-{
+#no-events h2 {
     text-align: center;
 }
 
-.buttons
-{
+.buttons {
     padding-left: 230px
 }
+
 /* ******** Events END ******** */
 
 /* ******** New Event Start ******** */
 
-.new-header h1
-{
+.new-header h1 {
     font-family: nunito;
     text-align: center;
     font-size: xx-large;
 }
 
-.form-name
-{
+.form-name {
     font-family: nunito;
     padding-left: 5cm;
 }
 
-.form-reason
-{
+.form-reason {
     font-family: nunito;
     padding-left: 5cm;
-}s
+}
 
-option
-{
+s option {
     text-align: center;
 }
 
-.start-end-time
-{
+.start-end-time {
     font-family: nunito;
     padding-left: 5cm;
 }
 
-.form-category
-{
+.form-category {
     font-family: nunito;
     padding-left: 5cm;
 }
 
-.form-pic
-{
+.form-pic {
     font-family: nunito;
-    padding-left: 5cm; 
+    padding-left: 5cm;
 }
 
-.button
-{
+.button {
     font-family: nunito;
-    padding-left: 5cm; 
+    padding-left: 5cm;
 }
 
 /* ******** New Event END ******** */
 
 /* ******** Event start ******** */
 
-.event-header
-{
+.event-header {
     font-family: nunito;
-    padding-left: 5cm; 
+    padding-left: 5cm;
     padding-top: 3cm;
 }
 
-.tractor-red
-{
+.tractor-red {
     height: 10%;
     width: 10%;
     padding-left: 6cm;
@@ -277,16 +250,14 @@ option
     margin: 0cm;
 }
 
-.basic-info
-{
+.basic-info {
     font-family: nunito;
-    float:left;
+    float: left;
     margin: 0%;
     padding-left: 1cm;
 }
 
-.edit-pic img
-{
+.edit-pic img {
     width: 2%;
     margin-top: 5%;
     padding-top: 4cm;
@@ -297,10 +268,9 @@ option
 
 /* ******** Edit start ******** */
 
-.edit-page
-{
+.edit-page {
     font-family: nunito;
-    float:left;
+    float: left;
     text-align: left;
     padding-left: 250px;
     padding-top: 30px;
@@ -311,8 +281,8 @@ option
 
 /* ******** Error Start ******** */
 
-.error-mes h3, p
-{
+.error-mes h3,
+p {
     text-align: center;
     font-family: nunito;
 }
@@ -320,22 +290,26 @@ option
 /* ******** Edit End ******** */
 
 /* ******** About Start ******** */
-.about h1,p,h3
-{
+.about h1,
+p,
+h3 {
     text-align: center;
     font-family: nunito;
 }
+
 /* ******** About End ******** */
 
 /* ******** Contact Start ******** */
-.about h1,p,h3,small
-{
+.about h1,
+p,
+h3,
+small {
     text-align: center;
     font-family: nunito;
 }
 
-small
-{
+small {
     padding-left: 30px;
 }
+
 /* ******** Contact End ******** */
