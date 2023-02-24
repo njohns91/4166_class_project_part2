@@ -47,6 +47,17 @@
                                                 <% }) %>
                                                     <% } %>
                     </div>
+                    <div id='right'>
+                        <% if(other.length) { %>
+                            <h2>Other</h2>
+                            <% other.forEach(event=> { %>
+                                <a href="/events/<%= event.id %>">
+                                    <h4>
+                                        <%= event.title %>
+                                    </h4>
+                                </a>
+                                <% }) %>
+                                    <% } %>
                     <% } else { %>
                         <div id='no-events'>
                             <h2>There are no events to display.</h2>
