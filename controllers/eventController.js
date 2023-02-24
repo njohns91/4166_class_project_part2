@@ -54,7 +54,7 @@ exports.update = (req, res, next)=>{
     events.image = "/images/" + req.file.filename;
     }
     if (model.updateById(id, events)) {
-        res.redirect('/event/'+id);
+        res.redirect('/event/' +id);
     } else {
         let err = new Error('Cannot find a event with id ' + id);
         err.status = 404;

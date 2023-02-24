@@ -124,7 +124,7 @@ exports.save = function (event){
     event.id = uuidv4();
     event.createdAt = DateTime.now().toLocaleString(DateTime.DATETIME_SHORT)
     events.push(event);
-}
+};
 
 exports.updateById = function(id, newEvent) {
     let event = events.find(event=>event.id === id);
@@ -142,7 +142,7 @@ exports.updateById = function(id, newEvent) {
     } else {
         return false;
     }
-}
+};
 
 exports.deleteById = function(id) {
     let index = events.findIndex(event => event.id === id)
@@ -152,4 +152,4 @@ exports.deleteById = function(id) {
     } else {
         return false;
     }
-}
+};
